@@ -64,10 +64,10 @@
             // 
             // txtContext
             // 
-            txtContext.Location = new Point(255, 92);
+            txtContext.Location = new Point(255, 86);
             txtContext.Multiline = true;
             txtContext.Name = "txtContext";
-            txtContext.Size = new Size(100, 141);
+            txtContext.Size = new Size(100, 147);
             txtContext.TabIndex = 3;
             // 
             // MainForm
