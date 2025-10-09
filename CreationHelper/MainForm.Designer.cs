@@ -37,9 +37,10 @@
             // lblPerson
             // 
             lblPerson.AutoSize = true;
-            lblPerson.Location = new Point(98, 51);
+            lblPerson.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblPerson.Location = new Point(81, 39);
             lblPerson.Name = "lblPerson";
-            lblPerson.Size = new Size(64, 15);
+            lblPerson.Size = new Size(112, 30);
             lblPerson.TabIndex = 0;
             lblPerson.Text = "Персонаж";
             // 
@@ -57,7 +58,7 @@
             txtPerson.Location = new Point(81, 86);
             txtPerson.Multiline = true;
             txtPerson.Name = "txtPerson";
-            txtPerson.Size = new Size(100, 147);
+            txtPerson.Size = new Size(112, 147);
             txtPerson.TabIndex = 2;
             // 
             // txtContext
