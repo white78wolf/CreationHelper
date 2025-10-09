@@ -30,6 +30,7 @@
         {
             lblPerson = new Label();
             lblContext = new Label();
+            txtPerson = new TextBox();
             SuspendLayout();
             // 
             // lblPerson
@@ -50,11 +51,20 @@
             lblContext.TabIndex = 1;
             lblContext.Text = "Контекст";
             // 
+            // txtPerson
+            // 
+            txtPerson.Location = new Point(81, 86);
+            txtPerson.Multiline = true;
+            txtPerson.Name = "txtPerson";
+            txtPerson.Size = new Size(100, 147);
+            txtPerson.TabIndex = 2;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtPerson);
             Controls.Add(lblContext);
             Controls.Add(lblPerson);
             Name = "MainForm";
@@ -67,5 +77,6 @@
 
         private Label lblPerson;
         private Label lblContext;
+        private TextBox txtPerson;
     }
 }
