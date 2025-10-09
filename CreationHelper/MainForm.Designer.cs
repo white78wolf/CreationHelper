@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lblPerson = new Label();
             SuspendLayout();
+            // 
+            // lblPerson
+            // 
+            lblPerson.AutoSize = true;
+            lblPerson.Location = new Point(98, 51);
+            lblPerson.Name = "lblPerson";
+            lblPerson.Size = new Size(64, 15);
+            lblPerson.TabIndex = 0;
+            lblPerson.Text = "Персонаж";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblPerson);
             Name = "MainForm";
             Text = "Генератор сюжетов";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblPerson;
     }
 }
