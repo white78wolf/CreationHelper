@@ -47,9 +47,10 @@
             // lblContext
             // 
             lblContext.AutoSize = true;
-            lblContext.Location = new Point(271, 51);
+            lblContext.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblContext.Location = new Point(255, 39);
             lblContext.Name = "lblContext";
-            lblContext.Size = new Size(56, 15);
+            lblContext.Size = new Size(98, 30);
             lblContext.TabIndex = 1;
             lblContext.Text = "Контекст";
             // 
