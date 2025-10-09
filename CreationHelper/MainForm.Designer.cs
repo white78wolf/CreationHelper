@@ -31,6 +31,7 @@
             lblPerson = new Label();
             lblContext = new Label();
             txtPerson = new TextBox();
+            txtContext = new TextBox();
             SuspendLayout();
             // 
             // lblPerson
@@ -45,7 +46,7 @@
             // lblContext
             // 
             lblContext.AutoSize = true;
-            lblContext.Location = new Point(273, 57);
+            lblContext.Location = new Point(271, 51);
             lblContext.Name = "lblContext";
             lblContext.Size = new Size(56, 15);
             lblContext.TabIndex = 1;
@@ -59,11 +60,20 @@
             txtPerson.Size = new Size(100, 147);
             txtPerson.TabIndex = 2;
             // 
+            // txtContext
+            // 
+            txtContext.Location = new Point(255, 92);
+            txtContext.Multiline = true;
+            txtContext.Name = "txtContext";
+            txtContext.Size = new Size(100, 141);
+            txtContext.TabIndex = 3;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtContext);
             Controls.Add(txtPerson);
             Controls.Add(lblContext);
             Controls.Add(lblPerson);
@@ -78,5 +88,6 @@
         private Label lblPerson;
         private Label lblContext;
         private TextBox txtPerson;
+        private TextBox txtContext;
     }
 }
