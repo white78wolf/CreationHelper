@@ -70,6 +70,7 @@
             txtContext.Name = "txtContext";
             txtContext.Size = new Size(100, 147);
             txtContext.TabIndex = 3;
+            txtContext.Enter += txtContext_Enter;
             // 
             // MainForm
             // 
