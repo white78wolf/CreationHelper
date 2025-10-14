@@ -2,6 +2,9 @@ namespace CreationHelper
 {
     public partial class MainForm : Form
     {
+        List<Person> persons = new List<Person>();
+        List<Context> contexts = new List<Context>();
+
         public MainForm()
         {
             InitializeComponent();
