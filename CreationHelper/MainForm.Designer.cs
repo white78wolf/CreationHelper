@@ -61,6 +61,7 @@
             txtPerson.Name = "txtPerson";
             txtPerson.Size = new Size(112, 147);
             txtPerson.TabIndex = 2;
+            txtPerson.Enter += txtPerson_Enter;
             // 
             // txtContext
             // 
