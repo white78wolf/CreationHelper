@@ -11,7 +11,7 @@ namespace CreationHelper
         private string _context;
         public Context(string context )
         {
-            _context = context;
+            this._context = context;
         }
     }
 }
