@@ -13,7 +13,7 @@ namespace CreationHelper
         private void txtPerson_Enter(object sender, EventArgs e)
         {
             txtPerson.SelectionStart = txtPerson.Text.Length;
-            txtPerson.SelectionLength = 0;            
+            txtPerson.SelectionLength = 0;
             txtPerson.ScrollToCaret();
         }
 
@@ -22,6 +22,34 @@ namespace CreationHelper
             txtContext.SelectionStart = txtContext.Text.Length;
             txtContext.SelectionLength = 0;
             txtContext.ScrollToCaret();
+        }
+
+        private void txtPerson_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                                
+                string currentLine = txtPerson.Lines.Length > 0
+                    ? txtPerson.Lines[txtPerson.Lines.Length - 1]
+                    : string.Empty;
+               
+                MessageBox.Show($"Текущая строка: {currentLine}");                
+            }
+        }
+
+        private void txtContext_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+
+                string currentLine = txtContext.Lines.Length > 0
+                    ? txtContext.Lines[txtContext.Lines.Length - 1]
+                    : string.Empty;
+
+                MessageBox.Show($"Текущая строка: {currentLine}");
+            }
         }
     }
 }

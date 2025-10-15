@@ -62,6 +62,7 @@
             txtPerson.Size = new Size(112, 147);
             txtPerson.TabIndex = 2;
             txtPerson.Enter += txtPerson_Enter;
+            txtPerson.KeyDown += txtPerson_KeyDown;
             // 
             // txtContext
             // 
@@ -71,6 +72,7 @@
             txtContext.Size = new Size(100, 147);
             txtContext.TabIndex = 3;
             txtContext.Enter += txtContext_Enter;
+            txtContext.KeyDown += txtContext_KeyDown;
             // 
             // MainForm
             // 
