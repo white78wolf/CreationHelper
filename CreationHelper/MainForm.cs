@@ -32,9 +32,9 @@ namespace CreationHelper
                                 
                 string currentLine = txtPerson.Lines.Length > 0
                     ? txtPerson.Lines[txtPerson.Lines.Length - 1]
-                    : string.Empty;
-               
-                MessageBox.Show($"Текущая строка: {currentLine}");                
+                    : string.Empty;               
+                
+                persons.Add(new Person(currentLine));                
             }
         }
 
@@ -47,8 +47,7 @@ namespace CreationHelper
                 string currentLine = txtContext.Lines.Length > 0
                     ? txtContext.Lines[txtContext.Lines.Length - 1]
                     : string.Empty;
-
-                MessageBox.Show($"Текущая строка: {currentLine}");
+                contexts.Add(new Context(currentLine));
             }
         }
     }
