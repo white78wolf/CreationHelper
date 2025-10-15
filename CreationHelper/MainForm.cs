@@ -47,7 +47,7 @@ namespace CreationHelper
                 string currentLine = txtContext.Lines.Length > 0
                     ? txtContext.Lines[txtContext.Lines.Length - 1]
                     : string.Empty;
-                contexts.Add(new Context(currentLine));
+                contexts.Add(new Context(currentLine));                
             }
         }
     }

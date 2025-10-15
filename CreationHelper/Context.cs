@@ -9,9 +9,12 @@ namespace CreationHelper
     internal class Context
     {
         private string _context;
+
         public Context(string context )
         {
             this._context = context;
         }
+
+        public string Context_Definition { get { return _context; } }
     }
 }
