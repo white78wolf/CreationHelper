@@ -32,13 +32,14 @@
             lblContext = new Label();
             txtPerson = new TextBox();
             txtContext = new TextBox();
+            btnGenerate = new Button();
             SuspendLayout();
             // 
             // lblPerson
             // 
             lblPerson.AutoSize = true;
             lblPerson.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblPerson.Location = new Point(81, 39);
+            lblPerson.Location = new Point(99, 39);
             lblPerson.Name = "lblPerson";
             lblPerson.Size = new Size(112, 30);
             lblPerson.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             lblContext.AutoSize = true;
             lblContext.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblContext.Location = new Point(255, 39);
+            lblContext.Location = new Point(301, 39);
             lblContext.Name = "lblContext";
             lblContext.Size = new Size(98, 30);
             lblContext.TabIndex = 1;
@@ -59,7 +60,7 @@
             txtPerson.Location = new Point(81, 86);
             txtPerson.Multiline = true;
             txtPerson.Name = "txtPerson";
-            txtPerson.Size = new Size(112, 147);
+            txtPerson.Size = new Size(150, 147);
             txtPerson.TabIndex = 2;
             txtPerson.Enter += txtPerson_Enter;
             txtPerson.KeyDown += txtPerson_KeyDown;
@@ -69,16 +70,27 @@
             txtContext.Location = new Point(255, 86);
             txtContext.Multiline = true;
             txtContext.Name = "txtContext";
-            txtContext.Size = new Size(100, 147);
+            txtContext.Size = new Size(198, 147);
             txtContext.TabIndex = 3;
             txtContext.Enter += txtContext_Enter;
             txtContext.KeyDown += txtContext_KeyDown;
+            // 
+            // btnGenerate
+            // 
+            btnGenerate.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnGenerate.Location = new Point(84, 263);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(369, 47);
+            btnGenerate.TabIndex = 4;
+            btnGenerate.Text = "Придумать идею";
+            btnGenerate.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(527, 475);
+            Controls.Add(btnGenerate);
             Controls.Add(txtContext);
             Controls.Add(txtPerson);
             Controls.Add(lblContext);
@@ -95,5 +107,6 @@
         private Label lblContext;
         private TextBox txtPerson;
         private TextBox txtContext;
+        private Button btnGenerate;
     }
 }
