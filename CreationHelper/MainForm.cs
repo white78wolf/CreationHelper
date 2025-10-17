@@ -28,13 +28,11 @@ namespace CreationHelper
         {
             if (e.KeyCode == Keys.Enter)
             {
-                e.SuppressKeyPress = true;
-                                
                 string currentLine = txtPerson.Lines.Length > 0
                     ? txtPerson.Lines[txtPerson.Lines.Length - 1]
-                    : string.Empty;               
-                
-                persons.Add(new Person(currentLine));                
+                    : string.Empty;
+
+                persons.Add(new Person(currentLine));
             }
         }
 
@@ -42,13 +40,22 @@ namespace CreationHelper
         {
             if (e.KeyCode == Keys.Enter)
             {
-                e.SuppressKeyPress = true;
-
                 string currentLine = txtContext.Lines.Length > 0
                     ? txtContext.Lines[txtContext.Lines.Length - 1]
                     : string.Empty;
-                contexts.Add(new Context(currentLine));                
+                contexts.Add(new Context(currentLine));
             }
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            string person = txtPerson.Lines.Length > 0
+                    ? txtPerson.Lines[txtPerson.Lines.Length - 1]
+                    : string.Empty;
+            string context = txtContext.Lines.Length > 0
+                    ? txtContext.Lines[txtContext.Lines.Length - 1]
+                    : string.Empty;
+            MessageBox.Show(person + " " + context);
         }
     }
 }

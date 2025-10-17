@@ -84,6 +84,7 @@
             btnGenerate.TabIndex = 4;
             btnGenerate.Text = "Придумать идею";
             btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // MainForm
             // 
