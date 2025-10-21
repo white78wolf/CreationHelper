@@ -10,6 +10,11 @@ namespace CreationHelper
     {
         private string _context;
 
+        public Context()
+        {
+            this._context = String.Empty;
+        }
+
         public Context(string context )
         {
             this._context = context;
