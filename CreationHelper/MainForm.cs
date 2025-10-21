@@ -22,40 +22,24 @@ namespace CreationHelper
             txtContext.SelectionStart = txtContext.Text.Length;
             txtContext.SelectionLength = 0;
             txtContext.ScrollToCaret();
-        }
-
-        private void txtPerson_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                string currentLine = txtPerson.Lines.Length > 0
-                    ? txtPerson.Lines[txtPerson.Lines.Length - 1]
-                    : string.Empty;
-
-                persons.Add(new Person(currentLine));
-            }
-        }
-
-        private void txtContext_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                string currentLine = txtContext.Lines.Length > 0
-                    ? txtContext.Lines[txtContext.Lines.Length - 1]
-                    : string.Empty;
-                contexts.Add(new Context(currentLine));
-            }
-        }
+        }        
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            string person = txtPerson.Lines.Length > 0
-                    ? txtPerson.Lines[txtPerson.Lines.Length - 1]
-                    : string.Empty;
-            string context = txtContext.Lines.Length > 0
-                    ? txtContext.Lines[txtContext.Lines.Length - 1]
-                    : string.Empty;
-            MessageBox.Show(person + " " + context);
+            string[] person_strings = txtPerson.Text.Split('\n');
+            string[] context_strings = txtContext.Text.Split('\n');
+
+            for (int i = 0; i < person_strings.Length; i++)
+            {
+                persons.Add(new Person(person_strings[i]));
+            }
+
+            for (int i = 0; i < context_strings.Length; i++)
+            {
+                contexts.Add(new Context(context_strings[i]));
+            }
+
+            MessageBox.Show(persons.LastOrDefault().Person_Definition + " " + contexts.LastOrDefault().Context_Definition);            
         }
     }
 }
