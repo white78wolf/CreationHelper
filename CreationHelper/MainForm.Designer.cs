@@ -62,8 +62,7 @@
             txtPerson.Name = "txtPerson";
             txtPerson.Size = new Size(150, 147);
             txtPerson.TabIndex = 2;
-            txtPerson.Enter += txtPerson_Enter;
-            //txtPerson.KeyDown += txtPerson_KeyDown;
+            txtPerson.Enter += txtPerson_Enter;            
             // 
             // txtContext
             // 
@@ -72,8 +71,7 @@
             txtContext.Name = "txtContext";
             txtContext.Size = new Size(198, 147);
             txtContext.TabIndex = 3;
-            txtContext.Enter += txtContext_Enter;
-            //txtContext.KeyDown += txtContext_KeyDown;
+            txtContext.Enter += txtContext_Enter;            
             // 
             // btnGenerate
             // 
