@@ -26,6 +26,8 @@ namespace CreationHelper
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
+
             string[] person_strings = txtPerson.Text.Split('\n');
             string[] context_strings = txtContext.Text.Split('\n');
 
@@ -38,8 +40,11 @@ namespace CreationHelper
             {
                 contexts.Add(new Context(context_strings[i]));
             }
+            
+            int rPerson = r.Next(0, persons.Count());
+            int rContext = r.Next(0, contexts.Count());
 
-            MessageBox.Show(persons.LastOrDefault().Person_Definition + " " + contexts.LastOrDefault().Context_Definition);            
+            MessageBox.Show(persons[rPerson].Person_Definition + " " + contexts[rContext].Context_Definition);
         }
     }
 }
