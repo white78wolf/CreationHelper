@@ -11,6 +11,11 @@ namespace CreationHelper
     {
         private string _person;
 
+        public Person() 
+        { 
+            this._person = string.Empty;
+        }
+
         public Person(string person) 
         {
             this._person = person;
