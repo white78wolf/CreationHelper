@@ -43,8 +43,8 @@ namespace CreationHelper
             
             int rPerson = r.Next(0, persons.Count());
             int rContext = r.Next(0, contexts.Count());
-
-            MessageBox.Show(persons[rPerson].Person_Definition + " " + contexts[rContext].Context_Definition);
+            
+            txtResult.Text = persons[rPerson].Person_Definition + " " + contexts[rContext].Context_Definition;
         }
     }
 }
