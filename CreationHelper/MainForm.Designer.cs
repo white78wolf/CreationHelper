@@ -33,6 +33,7 @@
             txtPerson = new TextBox();
             txtContext = new TextBox();
             btnGenerate = new Button();
+            txtResult = new TextBox();
             SuspendLayout();
             // 
             // lblPerson
@@ -62,7 +63,7 @@
             txtPerson.Name = "txtPerson";
             txtPerson.Size = new Size(150, 147);
             txtPerson.TabIndex = 2;
-            txtPerson.Enter += txtPerson_Enter;            
+            txtPerson.Enter += txtPerson_Enter;
             // 
             // txtContext
             // 
@@ -71,7 +72,7 @@
             txtContext.Name = "txtContext";
             txtContext.Size = new Size(198, 147);
             txtContext.TabIndex = 3;
-            txtContext.Enter += txtContext_Enter;            
+            txtContext.Enter += txtContext_Enter;
             // 
             // btnGenerate
             // 
@@ -84,11 +85,21 @@
             btnGenerate.UseVisualStyleBackColor = true;
             btnGenerate.Click += btnGenerate_Click;
             // 
+            // txtResult
+            // 
+            txtResult.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            txtResult.Location = new Point(84, 343);
+            txtResult.Multiline = true;
+            txtResult.Name = "txtResult";
+            txtResult.Size = new Size(369, 69);
+            txtResult.TabIndex = 5;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(527, 475);
+            ClientSize = new Size(527, 437);
+            Controls.Add(txtResult);
             Controls.Add(btnGenerate);
             Controls.Add(txtContext);
             Controls.Add(txtPerson);
@@ -107,5 +118,6 @@
         private TextBox txtPerson;
         private TextBox txtContext;
         private Button btnGenerate;
+        private TextBox txtResult;
     }
 }
