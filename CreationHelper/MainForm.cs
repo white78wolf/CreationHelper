@@ -40,6 +40,9 @@ namespace CreationHelper
             {
                 contexts.Add(new Context(context_strings[i]));
             }
+
+            persons = persons.Distinct().ToList();
+            contexts = contexts.Distinct().ToList();
             
             int rPerson = r.Next(0, persons.Count());
             int rContext = r.Next(0, contexts.Count());
