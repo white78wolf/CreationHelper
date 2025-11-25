@@ -12,8 +12,7 @@ namespace CreationHelper
     public static class JsonSerialization
     {
         static void SerializeObjectToJsonFile(List<Person> p_list, List<Context> c_list)
-        {
-            //string json = JsonConvert.SerializeObject(list);
+        {            
             string json = JsonConvert.SerializeObject(new
             {
                 p_list,
